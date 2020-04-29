@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Khand|Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <title>Catherine Yarovoi | Portfolio</title>
+</head>
+<body>
+    
+    <div class = "sidebar" id='nav'>
+        <a href="#" class="more">More</a>
+    </div>
+
+    <div class="sidebar" id="menu">
+        <div>
+            <div id='close-menu'>
+            <span id='close-menu-span'>x</span>
+            </div>
+            <div class="menu-items">
+                <ul class="menu-list">
+                    <a href="index.html">Home</a>
+                    <a href="resume.html">Résumé</a>
+                    <a href="contact.html">Contact Me</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class='contact-main'>
+        <header class='contact-header'>
+            <h2>Contact Me</h2>
+            <div class="contact-description">
+                If you would like to reach out to me regarding job opportunities or digital analytics questions, please fill out the form below. For all art inquiries, please email me at <a href="mailto:cyarovoi@gmail_art.com">cyarovoi@gmail_art.com</a>.
+            </div>
+        </header>
+
+        <div class='contact-form-container'> 
+            <div id='contact-form'>
+              <form id='contact-me-form' action='https://formspree.io/mjvabwwd' target="_blank" method="POST">
+                    <label for="first-name">First Name</label>
+                    <input class='form-fill' type="text" id="fname" name="firstname" placeholder="First Name" required>
+                
+                    <label for="last-name">Last Name</label>
+                    <input class='form-fill' type="text" id="lname" name="lastname" placeholder="Last Name" required>
+
+                    <label for="email">E-Mail</label>
+                    <input class='form-fill' type="email" id="email" name="email" placeholder="e-mail" required>
+
+                    <div id='inquiry-type'>
+                        <label for="inquiry-type">Please select your inquiry type:</label>
+                        <select id="inquiry-type" name="inquiry-type">
+                        <option value="job-opportunity">Job Opportunity</option>
+                        <option value="freelance">Free Lance Opportunity</option>
+                        <option value="résumé">Question regarding Résumé</option>
+                        <option value="analytics-question">Analytics Inquiry</option>
+                        <option value="art">Art Inquiry</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class=message>
+                        <label for="message">Message:</label>
+                        <textarea class='form-fill' type="text" id="message" name="message" placeholder="Please write your message here" required> </textarea>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </form>
+              <div id='thank-you'>Thank you for filling out the contact form. I will respond to your message shortly!</div>
+            </div>
+        </div>  
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
